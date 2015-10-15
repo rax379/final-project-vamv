@@ -15,7 +15,7 @@ header
 .menu-links
 {
 	text-decoration:none;
-	color: white;
+	color: black;
 }
 
 #header
@@ -43,6 +43,16 @@ header
 	height: 368px;
 	padding: 10px;
 	margin: 10px;
+}
+
+#sub-navigation
+{
+	background: #dddddd;	
+	padding: 5px;
+	width: 886px;
+	float: left;
+	height: 18px;
+	font-size: 14px;
 }
 
 #navigation
