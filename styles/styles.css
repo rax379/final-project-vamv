@@ -4,6 +4,7 @@ body
 	padding: 0px;
 	font-size: 12px;
 	font-family: Arial;
+	background: #c7e8bd;
 }
 
 header
@@ -63,6 +64,12 @@ header
 	float: left;
 	height: 18px;
 }
+#sub-navigation a:hover
+{
+	background: #ff8080;
+	font-style: none;
+	color: black;
+}
 #navigation a:hover
 {
 	background: #80ffff;
@@ -87,7 +94,7 @@ header
 	
 #transcript
 {
-	color: green;
+	color: blue;
 	font-size: 12px;
 	overflow: auto;
 	height: 321px;
