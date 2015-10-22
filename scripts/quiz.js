@@ -18,4 +18,16 @@ function processQuiz()
 			score = score +1
 		}
 	alert( "You got " + score + " correct!" );
-} 
+}
+// This function processes the quiz data
+function gradeQuiz1()
+{
+	var score = 0;
+	
+	/* 	some code goes here to grade the quiz
+      	and to assign a whole number between 0 
+			and 100 to the variable score. */
+
+	// call the function to report scores
+	parent.reportScores( score );
+}
