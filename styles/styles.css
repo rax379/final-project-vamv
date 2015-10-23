@@ -41,28 +41,28 @@ header
 	
 #main-content
 {
-	height: 368px;
+	height: 250px;
 	padding: 10px;
 	margin: 10px;
 }
 
 #sub-navigation
 {
-	background: #dddddd;	
 	padding: 5px;
 	width: 886px;
 	float: left;
 	height: 18px;
-	font-size: 14px;
+	font-size: 18px;
 }
 
 #navigation
 {
-	background: #666666;	
+	background: #ff8080;	
 	padding: 5px;
 	width: 886px;
 	float: left;
-	height: 18px;
+	height: 20px;
+	font-size: 18px;
 }
 #sub-navigation a:hover
 {
@@ -97,7 +97,7 @@ header
 	color: blue;
 	font-size: 12px;
 	overflow: auto;
-	height: 321px;
+	height: 200px;
 	width: 233px;
 }
 
