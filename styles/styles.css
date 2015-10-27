@@ -11,6 +11,7 @@ header
 {
 	font-size:  16px;
 	font-weight: bold;
+	text-align: center;
 }
 
 .menu-links
@@ -23,7 +24,7 @@ header
 {
 	color:black;
 	text-align: left;
-	
+	float: center;
 }
 #main-info
 {
@@ -53,13 +54,14 @@ header
 	float: left;
 	height: 18px;
 	font-size: 18px;
+	display: table-cell;
 }
 
 #navigation
 {
 	background: #ff8080;	
 	padding: 5px;
-	width: 886px;
+	width: 850px;
 	float: left;
 	height: 20px;
 	font-size: 18px;
@@ -108,4 +110,8 @@ header
 audio
 {
 	width: 230px;
+}
+table
+{
+	float: left;
 }
