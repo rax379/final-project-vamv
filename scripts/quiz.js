@@ -1,33 +1,78 @@
-function processQuiz()
-{
-	var q1 = document.forms.quiz.question1;
-	if (q1[ 0 ].checked )
-	var score = 0;
-		{
-			score = score + 1;
-		}
+//alert ("Hello!!");
 
-	var q2 = document.forms.quiz.question2;
-	if (q2[ 2 ].checked )
+//var score =0;
+//var q1 = document.forms.quiz1.question1;
+//var q2 = document.forms.quiz1.question2;
+//var q3 = document.forms.quiz1.question3;
+//var q4 = document.forms.quiz1.question4;
+//var q5 = document.forms.quiz1.question5;
+//var q6 = document.forms.quiz1.question6;
+//var q7 = document.forms.quiz1.question7;
+//var q8 = document.forms.quiz1.question8;
+
+
+function processQuiz() 
+{
+//		alert ("Hello!!");
+	var score =0;
+	var q1 = document.forms.quiz1.question1;
+	var q2 = document.forms.quiz1.question2;
+	var q3 = document.forms.quiz1.question3;
+	var q4 = document.forms.quiz1.question4;
+	var q5 = document.forms.quiz1.question5;
+	var q6 = document.forms.quiz1.question6;
+	var q7 = document.forms.quiz1.question7;
+	var q8 = document.forms.quiz1.question8;
+
+	
+	if( q1[ 2 ].checked ) 
+	{ 
+	score = score + 1; 
+//	alert( "Correct!" );
+	} 
+	
+	if( q2[ 1 ].checked ) 
+	{ 
+	score = score + 1; 
+//	alert( "Correct!" );
+	} 
+	
+	if( q3[ 2 ].checked ) 
+	{ 
+	score = score + 1; 
+//	alert( "Correct!" );
+	} 
+	
+	if( q4[ 0 ].checked ) 
+	{ 
+	score = score + 1; 
+//	alert( "Correct!" );
+	} 
+	
+	if( q5[ 2 ].checked ) 
+	{ 
+	score = score + 1; 
+//	alert( "Correct!" );
+	} 
+	
+	if( q6[ 2 ].checked ) 
+	{ 
+	score = score + 1; 
+//	alert( "Correct!" );
+	} 
+	
+	if( q7[ 2 ].checked ) 
+		{ 
+		score = score + 1; 
+//		alert( "Correct!" );
+		} 
+	if( q8[ 1 ].checked )
 		{
-			score = score +1
-		}
-	var q3 = document.forms.quiz.question3;
-	if (q3[ 1 ].checked )
-		{
-			score = score +1
-		}
+			score = score + 1; 
+//			alert( "Correct!" );
+		}		
+   
+    
 	alert( "You got " + score + " correct!" );
 }
-// This function processes the quiz data
-function gradeQuiz1()
-{
-	var score = 0;
 	
-	/* 	some code goes here to grade the quiz
-      	and to assign a whole number between 0 
-			and 100 to the variable score. */
-
-	// call the function to report scores
-	parent.reportScores( score );
-}
