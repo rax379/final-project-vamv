@@ -47,7 +47,7 @@ section
 }
 #main-content
 {
-	height: 150px;
+	height: 200px;
 	padding: 10px;
 	margin: 10px;
 }
@@ -75,10 +75,18 @@ figure
     float:left;
     padding:5px;	      
 }
-section {
+section 
+{
     width:350px;
     float:left;
     padding:10px;	 	 
+}
+#article
+{
+	height: 400px;
+	width: 150px;
+    float:left;
+    padding:10px;
 }
 #sub-navigation a:hover
 {
@@ -124,8 +132,4 @@ section {
 audio
 {
 	width: 230px;
-}
-table
-{
-	float: left;
 }
