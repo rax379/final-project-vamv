@@ -16,8 +16,10 @@ header
 
 .menu-links
 {
-	text-decoration:none;
-	color: black;
+	text-decoration: none;
+	color: green;
+	display: block;
+	
 }
 #header
 {
@@ -68,12 +70,14 @@ figure
 }
 #navigation 
 {
-    line-height:30px;
-    background-color:#ff8080;
-    height:300px;
-    width:125px;
-    float:left;
-    padding:5px;	      
+    display: block;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #98bf21;
+    width: 120px;
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;  
 }
 section 
 {
@@ -132,4 +136,28 @@ section
 audio
 {
 	width: 230px;
+}
+/* unvisited link */
+a:link 
+{
+    color: blue;
+}
+
+/* visited link */
+a:visited 
+{
+    color: green;
+}
+
+/* mouse over link */
+a:hover 
+{
+    color: hotpink;
+}
+
+/* selected link */
+a:active 
+{
+    color: blue;
+
 }
