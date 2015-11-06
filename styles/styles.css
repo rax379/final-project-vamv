@@ -4,7 +4,7 @@ body
 	padding: 0px;
 	font-size: 12px;
 	font-family: Arial;
-	background: #c7e8bd;
+	background: #d0f2cc;
 }
 
 header
@@ -21,12 +21,6 @@ header
 	display: block;
 	
 }
-#header
-{
-	color:black;
-	text-align: left;
-	float: center;
-}
 #main-info
 {
 	display: table-cell;
@@ -34,32 +28,21 @@ header
 	border: solid blue;
 	float: left;
 	width: 525px;
-	height: 361px;
+	height: 410px;
 	padding: 10px;
 	overflow: auto;
 }
 
 #aside-info
 {
-	height: 410px;
-	border: solid black;
+	height: 420px;
+	border: solid blue;
 	vertical-align: top;
 	padding: 5px;
 	width: 173px;
 	margin-left: 3px;
 	overflow: auto;
 }
-#aside-title-audio
-{
-	width: 100px;
-	font-size: 14px;
-	font-weight: bold;
-	color: black;
-	padding: 5px;
-	border: solid blue;
-	text-align: left;
-}
-
 #main
 {
 	display: table-cell;
@@ -67,7 +50,7 @@ header
 	margin-left: 3px;
 	margin-right: 6px;
 	float: left;
-	height: 356px;
+	height: 410px;
 }
 
 #main-table
@@ -81,10 +64,12 @@ header
 {
 	padding: 5px;
 	width: 535px;
-	float: left;
+	float: center;
 	height: 18px;
 	font-size: 14px;
-	margin-bottom: 5px;
+	vertical-align: top;
+	margin-left: 135px;
+	margin-bottom: 15px;
 	border: solid blue;
 }
 #sub-navigation a
@@ -93,7 +78,7 @@ header
 	font-weight: bold;
 	color: green;
 	width: 120px;
-	text-align: center;
+	text-align: left;
 	padding: 4px;
 	text-decoration: none;
 }
@@ -112,29 +97,6 @@ header
     float:left;
     vertical-align: top;
 }
-#sidelinks a:link
-{
-	font size: 14px;
-	color: black;
-	width: 120px;
-	text-align: center;
-	padding: 4px;
-	text-decoration: none;
-}
-
-#section 
-{
-    width:350px;
-    float:left;
-    padding:10px;	 	 
-}
-#article
-{
-	height: 400px;
-	width: 150px;
-    float:left;
-    padding:10px;
-}
 
 #sub-navigation a:hover
 {
@@ -152,11 +114,12 @@ header
 #aside-title-audio
 {
 	background: #666666;
-	width: 233px;
+	width: 140px;
 	font-size: 14px;
 	font-weight: bold;
 	color: white;
 	padding: 5px;
+	border: solid blue;
 }
 
 #content-frame
