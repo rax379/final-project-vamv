@@ -1,29 +1,34 @@
 <!doctype html>
 <html lang="en">
-
-
 	<head>
 		<meta charset="utf-8"/>
 		<title>Healthy Lifestyles for Teen</title>
-		<link href="styles/styles.css" rel="stylesheet" type="text/css"/>
+		<script src="scripts/scorm-api-wrapper.js"></script>
+		<script src="scripts/sessionstorage.1.4.js"></script>
+		<script src="scripts/scripts.js"></script>
+		
 		
 		<!--- link your other script files here that are specific to this HTML page here --->
+		<link href="styles/styles.css" rel="stylesheet" type="text/css"/>
 	</head>	
 	<body onload="javascript:parent.visitTopic1();">
 		<header>
-			<h1>Healthy Lifestyles for Teens</h1>
+			<div id="banner">
+			<img title="Banner" alt="banner" src="images/nutrition2.jpg"></img>
+			</div>
 		</header>
 		<div id="sub-navigation">
-			<nav>
-			<a href="topic-1a.html" class="menu-links">Portion Control</a> |
-			<a href="topic-1b.html" class="menu-links">Food Labels</a> |
-			<a href="topic-1c.html" class="menu-links">Food Choices</a> |
-			<a href="topic-1d.html" class="menu-links">Smart Snacking</a> |
-			<a href="topic-1e.html" class="menu-links">Food Allergies</a> |
-			<a href="topic-1f.html" class="menu-links">Cooking Recipes</a> |
+				<nav>
+			<a class="navlinks" href="topic-1a.html" class="menu-links">Portions</a>|
+			<a class="navlinks" href="topic-1b.html" class="menu-links">Food Labels</a>|
+			<a class="navlinks" href="topic-1c.html" class="menu-links">Food Choices</a>|
+			<a class="navlinks" href="topic-1d.html" class="menu-links">Snacking</a>|
+			<a class="navlinks" href="topic-1e.html" class="menu-links">Allergies</a>|
+			<a class="navlinks" href="topic-1f.html" class="menu-links">Recipes</a>|
 			</nav>
 		</div>
-		
+		<div id="all">
+		<div id="main">
 		<div id="navigation">
 			<nav>
 				<a href="index.html" class="menu-links">Home</a><br>
@@ -31,15 +36,13 @@
 				<a href="topic-2.html"  class="menu-links">Fitness</a><br>
 				<a href="topic-3.html"  class="menu-links">Physical Appearance</a><br>
 				<a href="drag-and-drop.html" class="menu-links">Activity</a><br>
-				<a href="quiz.html" class="menu-links">Quiz</a>
+				<a href="quiz.html" class="menu-links">Quiz</a><br>
 			</nav>	
 			</div>
 			<div id="main-info">
-				<article>
 					<header>
 						<h1>Smart Snacking</h1>
 					</header>
-				<figure>
 				<p>
 				Are you a teenager with many after school activities such as football or cheerleadering? Do you get so hungry that you don't care what you eat pizza or chips?  
 				Let me help you out.  There are solutions to avoid this unhealthy trap.  How about some smart snacking to keep in track to the right healthy lifestyle.  Below
@@ -53,10 +56,9 @@
 				<p>
 				References: 
 				<a href="http://kidshealth.org/teen/food_fitness/nutrition/healthy_snacks.html#">kidshealth.org</a>
-				
+				<br>
 				</p>
-				</figure>
-				</article>
+			</div>
 			</div>
 			<div id="aside-info">
 				<aside>
@@ -72,8 +74,8 @@
 				<div id="transcript">
 					When you snack, it is important to choose the right snacks to keep your energy levels up, but your calories low at the same time.  This is the tricky part especially when you are hungry and crave anything you see.  Therefore, to avoid these traps, it is important to carry healthy snacks with you like the examples provided.  In addition to keep energy levels high, eating healthy helps to keep your mind alert.  
 				</div>			
-</aside>
+			</aside>
 			</div>
-		
+		</div>
 	</body>
 </html>
