@@ -1,29 +1,34 @@
 <!doctype html>
 <html lang="en">
-
-
 	<head>
 		<meta charset="utf-8"/>
 		<title>Healthy Lifestyles for Teen</title>
-		<link href="styles/styles.css" rel="stylesheet" type="text/css"/>
+		<script src="scripts/scorm-api-wrapper.js"></script>
+		<script src="scripts/sessionstorage.1.4.js"></script>
+		<script src="scripts/scripts.js"></script>
+		
 		
 		<!--- link your other script files here that are specific to this HTML page here --->
+		<link href="styles/styles.css" rel="stylesheet" type="text/css"/>
 	</head>	
 	<body onload="javascript:parent.visitTopic1();">
 		<header>
-			<h1>Healthy Lifestyles for Teens</h1>
+			<div id="banner">
+			<img title="Banner" alt="banner" src="images/nutrition2.jpg"></img>
+			</div>
 		</header>
 		<div id="sub-navigation">
-			<nav>
-			<a href="topic-1a.html" class="menu-links">Portion Control</a> |
-			<a href="topic-1b.html" class="menu-links">Food Labels</a> |
-			<a href="topic-1c.html" class="menu-links">Food Choices</a> |
-			<a href="topic-1d.html" class="menu-links">Smart Snacking</a> |
-			<a href="topic-1e.html" class="menu-links">Food Allergies</a> |
-			<a href="topic-1f.html" class="menu-links">Cooking Recipes</a> |
+				<nav>
+			<a class="navlinks" href="topic-1a.html" class="menu-links">Portions</a>|
+			<a class="navlinks" href="topic-1b.html" class="menu-links">Food Labels</a>|
+			<a class="navlinks" href="topic-1c.html" class="menu-links">Food Choices</a>|
+			<a class="navlinks" href="topic-1d.html" class="menu-links">Snacking</a>|
+			<a class="navlinks" href="topic-1e.html" class="menu-links">Allergies</a>|
+			<a class="navlinks" href="topic-1f.html" class="menu-links">Recipes</a>|
 			</nav>
 		</div>
-		
+		<div id="all">
+		<div id="main">
 		<div id="navigation">
 			<nav>
 				<a href="index.html" class="menu-links">Home</a><br>
@@ -31,15 +36,13 @@
 				<a href="topic-2.html"  class="menu-links">Fitness</a><br>
 				<a href="topic-3.html"  class="menu-links">Physical Appearance</a><br>
 				<a href="drag-and-drop.html" class="menu-links">Activity</a><br>
-				<a href="quiz.html" class="menu-links">Quiz</a>
+				<a href="quiz.html" class="menu-links">Quiz</a><br>
 			</nav>	
 			</div>
 			<div id="main-info">
-				<article>
 					<header>
 						<h1>Food Allergies</h1>
 					</header>
-				<figure>
 				<p>
 				Food Allergies should be taken with extreme caution with consuming certain foods.  It is one of the most common fatal accidents among teens. 
 				One of the most fatal allergic reactions is anaphylaxis.  Always check with your doctor on any allergies.  Here are the most common food allergies:
@@ -51,14 +54,14 @@
 					<li> wheat </li>
 					<li> fish </li>
 				</ul>
-				<img src="images/allergies.jpg">
 				<p>
 				References: 
 				<a href="https://www.foodallergy.org/symptoms">foodallergy.org</a>
-				<a href="http://www.webmd.com/allergies/news/20060306/teens-food-allergies-risks">webmd.com</a>
-				</p>
-				</figure>
-				</article>
+				<a href="http://www.webmd.com/allergies/news/20060306/teens-food-allergies-risks">webmd.com</a><br>
+				<br>
+				<img src="images/allergies.jpg"><br>
+				Image source:<a href="http://creativecommons.org">creativecommons.org</a>
+			</div>
 			</div>
 			<div id="aside-info">
 				<aside>
@@ -67,15 +70,14 @@
 					</header>
 					<!--- put your audio here --->
 					<br/>
-					
 					<header>
 						<p id="aside-title-audio">Captions</p>
 					</header>
 				<div id="transcript">
 					When you eat, it is important to be cautious.  Consult your doctor of any food allergies you might be aware of to avoid health complications.  You will see a list of common food allergies on the list.  Ignoring any allergies can cause serious consequences, including fatality.   
-								</div>			
+				</div>			
 				</aside>
 			</div>
-		
+		</div>
 	</body>
 </html>
