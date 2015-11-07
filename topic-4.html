@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<title>Put Your Course Title Here</title>
+		<link href="styles/styles.css" rel="stylesheet" type="text/css"/>
+		<link href="styles/drag-and-drop-styles.css" rel="stylesheet" type="text/css"/>
+		<script language="javascript" src="scripts/drag-and-drop.js"></script>
+	</head>
+	  
+    <body onload="javascript:parent.visitTopic4();">
+	<header>
+			Healthy Lifestyles for Teens 444
+		</header>
+		<div id="main-content">
+		<section>
+			<div id="main-info">
+				<article>
+					<header>
+						<h1 id ="header">TITLE</h1>
+					</header>
+					<h1>Drag and Drop Activity</h1>
+            
+            <section>
+         		<form name="dd1" onsubmit="javascript:processForm(); return false;">  
+				<p>Match each National celebration with the day it is celebrated.</p>
+				
+				<div class="column">
+						<h3>National Celebration</h3>
+					 	<div id="d1" value="3" class="dragger" draggable="true"
+				     		ondragstart="return startDrag( event )"
+				     		ondragend="return endDrag( event )"><p>Independence Day</p></div><br/>  
+				     	<div id="d2" value="2" class="dragger" draggable="true"
+				     		ondragstart="return startDrag( event )"
+				     		ondragend="return endDrag( event )"><p>Memorial Day</p></div><br/>                        
+				 		<div id="d3" value="0" class="dragger" draggable="true"
+				     		ondragstart="return startDrag( event )"
+				     		ondragend="return endDrag( event )"><p>Thanksgiving Day</p></div><br/>  
+					 	<div id="d4" value="1" class="dragger" draggable="true"
+				     		ondragstart="return startDrag( event )"
+				     		ondragend="return endDrag( event )"><p>Veterans Day</p></div><br/>  
+				</div>
+				
+				    
+				<div class="column">
+						<h3>Day it is celebrated</h3>
+				     	<div id="db1" value="3" class="draggerbay" 
+				     		ondrop="return dropDragger( event )"
+				     		ondragover="return false"
+				     		ondragenter="return enterDragger( event )"><p>4th of July</p></div><br/>                        
+				 		<div id="db2" value="2" class="draggerbay"
+				     		ondrop="return dropDragger( event )"
+				     		ondragover="return false"
+				     		ondragenter="return enterDragger( event )"><p>Last Monday of May</p></div><br/>  
+					 	<div id="db3" value="0" class="draggerbay"
+				     		ondrop="return dropDragger( event )"
+				     		ondragover="return false"
+				     		ondragenter="return enterDragger( event )"><p>4th Thursday of November</p></div><br/> 
+					 	<div id="db4" value="1" class="draggerbay"
+				     		ondrop="return dropDragger( event )"
+				     		ondragover="return false"
+				     		ondragenter="return enterDragger( event )"><p>11th of November</p></div><br/>  
+				
+				<p id="response">&nbsp;</p>
+				<input type="submit" name="button" value="Submit Your Answer"/><br/>
+				</form>
+            </section>
+        </article>
+        </div>
+        <div id="aside-info">
+				<aside>
+					<header>
+						<p id="aside-title-audio">Audio</p>
+					</header>
+					<!--- put your audio here --->
+					<br/>
+					
+					<header>
+						<p id="aside-title-audio">Captions</p>
+					</header>
+				<div id="transcript">
+					<!--- include your transcript here --->
+					This drag and drop activity includes matching the national celebrations with the date that they are celebrated.  In order to explain the significance of the celebration, you must remember when the holiday is celebrated.
+				</div>
+				</aside>
+			</div>
+		</section>
+		<div id="navigation">
+			<nav>
+				<a href="topic-1.html"class="menu-links">Introduction</a>
+				<a href="topic-2.html"class="menu-links">Veterans & Memorial Day</a>
+				<a href="topic-3.html"class="menu-links">Thanksgiving & Independence Day</a>
+				<a href="topic-4.html"class="menu-links">Matching Activity</a>
+				<a href="topic-5.html" id="quiz-link" class="menu-links">Quiz</a>
+			</nav>
+		</div>
+		</body>
+</html>

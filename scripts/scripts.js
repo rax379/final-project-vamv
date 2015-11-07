@@ -24,10 +24,12 @@ function startCourse()
             // set the "key" by giving it a value.  all values are strings!
             // course_started indicated that this OLM has started
     		sessionStorage.setItem( "course_started", "1" );
-    		sessionStorage.setItem( "topic1", "unvisited" );
-    		sessionStorage.setItem( "topic2", "unvisited" );    
-    		sessionStorage.setItem( "topic3", "unvisited" );
-    		sessionStorage.setItem( "topic4", "unvisited" );
+    		sessionStorage.setItem( "topic-2", "unvisited" );
+    		sessionStorage.setItem( "topic-2a", "unvisited" );    
+    		sessionStorage.setItem( "topic-2b", "unvisited" );
+    		sessionStorage.setItem( "topic-2c", "unvisited" );
+    		sessionStorage.setItem( "topic-2d", "unvisited" );
+    		sessionStorage.setItem( "topic-2e", "unvisited" );
     			
 			// set the values you want to persist throughout the website here
         }
@@ -83,36 +85,48 @@ function finishCourse()
 	oScorm.quit();
 }
 
-function visitTopic1()
-{
-	sessionStorage.setItem( "topic1", "visited" );
-	checkVisits();
-}
 function visitTopic2()
 {
-	sessionStorage.setItem( "topic2", "visited" );
+	sessionStorage.setItem( "topic-2", "visited" );
 	checkVisits();
 }
-function visitTopic3()
+function visitTopic2a()
 {
-	sessionStorage.setItem( "topic3", "visited" );
+	sessionStorage.setItem( "topic-2a", "visited" );
 	checkVisits();
 }
-function visitTopic4()
+function visitTopic2b()
 {
-	sessionStorage.setItem( "topic4", "visited" );
+	sessionStorage.setItem( "topic-2b", "visited" );
 	checkVisits();
 }
-
+function visitTopic2c()
+{
+	sessionStorage.setItem( "topic-2c", "visited" );
+	checkVisits();
+}
+function visitTopic2d()
+{
+	sessionStorage.setItem( "topic-2d", "visited" );
+	checkVisits();
+}
+function visitTopic2e()
+{
+	sessionStorage.setItem( "topic-2e", "visited" );
+	checkVisits();
+}
 function checkVisits()
 {
-	var value1 = sessionStorage.getItem( "topic1" );
-	var value2 = sessionStorage.getItem( "topic2" );
-	var value3 = sessionStorage.getItem( "topic3" );
-	var value4 = sessionStorage.getItem( "topic4" );
+	var value1 = sessionStorage.getItem( "topic-2" );
+	var value2 = sessionStorage.getItem( "topic-2a" );
+	var value3 = sessionStorage.getItem( "topic-2b" );
+	var value4 = sessionStorage.getItem( "topic-2c" );
+	var value5 = sessionStorage.getItem( "topic-2d" );
+	var value6 = sessionStorage.getItem( "topic-2e" );
 	
 	if( value1 == "visited" && value2 == "visited" &&
-			value3 == "visited" && value4 == "visited" )
+			value3 == "visited" && value4 == "visited" &&
+			value5 == "visited" && value6 == "visited" )
 		{
 			document.getElementById( "content-frame" ).contentWindow.document.getElementById( "quiz-link" ).style.display="inline";
 		}

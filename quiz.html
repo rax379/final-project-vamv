@@ -8,9 +8,9 @@
 		<link href="styles/styles.css" rel="stylesheet" type="text/css"/>
 		
 		<!--- link your other script files here that are specific to this HTML page here --->
-		<script lang="javascript" src="scripts/quiz.js"></script>
+		<script src="scripts/quiz.js" lang="javascript" ></script>
 	</head>	
-	<body onload="javascript:parent.visitTopic5();">
+	<body onload="javascript:parent.checkVisits();">
 		<header>
 			<h1>Healthy Lifestyles for Teens</h1>
 		</header>
@@ -26,7 +26,7 @@
 				<a href="topic-2.html"  class="menu-links">Fitness</a><br>
 				<a href="topic-3.html"  class="menu-links">Physical Appearance</a><br>
 				<a href="drag-and-drop.html" class="menu-links">Activity</a><br>
-				<a href="quiz.html" class="menu-links">Quiz</a>
+					<a href="quiz.html" id="quiz-link" class="menu-links">Quiz</a>
 			</nav>	
 			</div>
 			<div id="main-info">
