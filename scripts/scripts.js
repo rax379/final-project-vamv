@@ -5,6 +5,10 @@ var oScorm = pipwerks.SCORM;
 
 // This function starts the course.  This function should be called first to ensure that
 // all session variables are created
+function loadOLM();
+{
+	
+}
 function startCourse()
 {
 	// check to see if cookies is enabled, otherwise, this won't work
@@ -24,13 +28,27 @@ function startCourse()
             // set the "key" by giving it a value.  all values are strings!
             // course_started indicated that this OLM has started
     		sessionStorage.setItem( "course_started", "1" );
+    		sessionStorage.setItem( "topic-1", "unvisited" );
+    		sessionStorage.setItem( "topic-1a", "unvisited" );
+    		sessionStorage.setItem( "topic-1b", "unvisited" );
+    		sessionStorage.setItem( "topic-1c", "unvisited" );
+    		sessionStorage.setItem( "topic-1d", "unvisited" );
+    		sessionStorage.setItem( "topic-1e", "unvisited" );
+    		sessionStorage.setItem( "topic-1f", "unvisited" );
     		sessionStorage.setItem( "topic-2", "unvisited" );
     		sessionStorage.setItem( "topic-2a", "unvisited" );    
     		sessionStorage.setItem( "topic-2b", "unvisited" );
     		sessionStorage.setItem( "topic-2c", "unvisited" );
     		sessionStorage.setItem( "topic-2d", "unvisited" );
     		sessionStorage.setItem( "topic-2e", "unvisited" );
-    			
+    		sessionStorage.setItem( "topic-3", "unvisited" );
+    		sessionStorage.setItem( "topic-3a", "unvisited" );
+    		sessionStorage.setItem( "topic-3b", "unvisited" );
+    		sessionStorage.setItem( "topic-3c", "unvisited" );
+    		sessionStorage.setItem( "topic-3d", "unvisited" );
+    		sessionStorage.setItem( "topic-3e", "unvisited" );
+    		sessionStorage.setItem( "topic-3f", "unvisited" );
+    		
 			// set the values you want to persist throughout the website here
         }
 	}
@@ -73,9 +91,27 @@ function initializeSCORM()
 
 // This function reports the score from the assessment to the LMS
 // This should only be called when the user submits the answers to the quiz
-function reportScores()
+function reportScores(score)
 {	
+	oScorm.set("cmi.score.raw", score );
+	oScorm.set("cmi.score.min", 70 );
+	oScorm.set("cmi.score.max", 100 );
+	oScorm.set("cmi.score.scaled", score / 100 );
+	
+	oScorm.set("cmi.success_status", "passed" );
+	oScorm.set("cmi.completion_status", "completed" );
+	oScorm.set("cmi.lesson_status", "passed"  );
+	
 	oScorm.save();
+}
+function gradeQuiz1()
+{
+var score = 0;
+/* some code goes here to grade the quiz
+ and to assign a whole number between 0
+ and 100 to the variable score. */
+// call the function to report scores
+parent.reportScores( 70 );
 }
 
 // This function is called when the window is closed.  It saves and quits the course.
@@ -84,7 +120,10 @@ function finishCourse()
 	oScorm.save();
 	oScorm.quit();
 }
-
+function finishOLM();
+{
+	
+}
 function visitTopic2()
 {
 	sessionStorage.setItem( "topic-2", "visited" );
@@ -132,4 +171,5 @@ function checkVisits()
 		}
 		
 }
+
 
