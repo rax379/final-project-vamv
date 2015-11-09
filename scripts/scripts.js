@@ -124,6 +124,41 @@ function finishOLM();
 {
 	
 }
+function visitTopic1()
+{
+	sessionStorage.setItem( "topic-1", "visited" );
+	checkVisits();
+}
+function visitTopic1a()
+{
+	sessionStorage.setItem( "topic-1a", "visited" );
+	checkVisits();
+}
+function visitTopic1b()
+{
+	sessionStorage.setItem( "topic-1b", "visited" );
+	checkVisits();
+}
+function visitTopic1c()
+{
+	sessionStorage.setItem( "topic-1c", "visited" );
+	checkVisits();
+}
+function visitTopic1d()
+{
+	sessionStorage.setItem( "topic-1d", "visited" );
+	checkVisits();
+}
+function visitTopic1e()
+{
+	sessionStorage.setItem( "topic-1e", "visited" );
+	checkVisits();
+}
+function visitTopic1f()
+{
+	sessionStorage.setItem( "topic-1f", "visited" );
+	checkVisits();
+}
 function visitTopic2()
 {
 	sessionStorage.setItem( "topic-2", "visited" );
@@ -154,18 +189,84 @@ function visitTopic2e()
 	sessionStorage.setItem( "topic-2e", "visited" );
 	checkVisits();
 }
+function visitTopic3()
+{
+	sessionStorage.setItem( "topic-3", "visited" );
+	checkVisits();
+}
+function visitTopic3a()
+{
+	sessionStorage.setItem( "topic-3a", "visited" );
+	checkVisits();
+}
+function visitTopic3b()
+{
+	sessionStorage.setItem( "topic-3b", "visited" );
+	checkVisits();
+}
+function visitTopic3c()
+{
+	sessionStorage.setItem( "topic-3c", "visited" );
+	checkVisits();
+}
+function visitTopic3d()
+{
+	sessionStorage.setItem( "topic-3d", "visited" );
+	checkVisits();
+}
+function visitTopic3e()
+{
+	sessionStorage.setItem( "topic-3e", "visited" );
+	checkVisits();
+}
+function visitTopic3f()
+{
+	sessionStorage.setItem( "topic-3f", "visited" );
+	checkVisits();
+}
 function checkVisits()
 {
-	var value1 = sessionStorage.getItem( "topic-2" );
-	var value2 = sessionStorage.getItem( "topic-2a" );
-	var value3 = sessionStorage.getItem( "topic-2b" );
-	var value4 = sessionStorage.getItem( "topic-2c" );
-	var value5 = sessionStorage.getItem( "topic-2d" );
-	var value6 = sessionStorage.getItem( "topic-2e" );
+	var value1 = sessionStorage.getItem( "topic-1" );
+	var value2 = sessionStorage.getItem( "topic-1a" );
+	var value3 = sessionStorage.getItem( "topic-1b" );
+	var value4 = sessionStorage.getItem( "topic-1c" );
+	var value5 = sessionStorage.getItem( "topic-1d" );
+	var value6 = sessionStorage.getItem( "topic-1e" );
+	var value7 = sessionStorage.getItem( "topic-1f" );
+	var value8 = sessionStorage.getItem( "topic-2" );
+	var value9 = sessionStorage.getItem( "topic-2a" );
+	var value10 = sessionStorage.getItem( "topic-2b" );
+	var value11 = sessionStorage.getItem( "topic-2c" );
+	var value12 = sessionStorage.getItem( "topic-2d" );
+	var value13 = sessionStorage.getItem( "topic-2e" );
+	var value14 = sessionStorage.getItem( "topic-3" );
+	var value15 = sessionStorage.getItem( "topic-3a" );	
+	var value16 = sessionStorage.getItem( "topic-3b" );
+	var value17 = sessionStorage.getItem( "topic-3c" );
+	var value18 = sessionStorage.getItem( "topic-3d" );
+	var value19 = sessionStorage.getItem( "topic-3e" );
+	var value20 = sessionStorage.getItem( "topic-3f" );
 	
-	if( value1 == "visited" && value2 == "visited" &&
-			value3 == "visited" && value4 == "visited" &&
-			value5 == "visited" && value6 == "visited" )
+	if( value1 == "visited" && 
+		value2 == "visited" &&
+		value3 == "visited" && 
+		value4 == "visited" &&
+		value5 == "visited" && 
+		value6 == "visited" &&
+		value7 == "visited" &&
+		value8 == "visited" && 
+		value9 == "visited" &&
+		value10 == "visited" &&				
+		value11 == "visited" && 
+		value12 == "visited" &&
+		value13 == "visited" &&
+		value14 == "visited" && 
+		value15 == "visited" &&
+		value16 == "visited" &&
+		value17 == "visited" && 
+		value18 == "visited" &&
+		value19 == "visited" &&
+		value20 == "visited" )
 		{
 			document.getElementById( "content-frame" ).contentWindow.document.getElementById( "quiz-link" ).style.display="inline";
 		}
