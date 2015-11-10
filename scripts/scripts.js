@@ -94,11 +94,12 @@ function initializeSCORM()
 function reportScores(score)
 {	
 	oScorm.set("cmi.score.raw", score );
-	oScorm.set("cmi.score.min", 70 );
+	oScorm.set("cmi.score.min", 0 );
 	oScorm.set("cmi.score.max", 100 );
 	oScorm.set("cmi.score.scaled", score / 100 );
 	
 	oScorm.set("cmi.success_status", "passed" );
+	if 
 	oScorm.set("cmi.completion_status", "completed" );
 	oScorm.set("cmi.lesson_status", "passed"  );
 	
