@@ -13,48 +13,48 @@ function processQuiz()
 	
 	if( q1[ 2 ].checked ) 
 	{ 
-	score = score + 1; 
+	score = score + 12.5; 
 	} 
 	
 	if( q2[ 1 ].checked ) 
 	{ 
-	score = score + 1; 
+	score = score + 12.5; 
 	} 
 	
 	if( q3[ 2 ].checked ) 
 	{ 
-	score = score + 1; 
+	score = score + 12.5; 
 	} 
 	
 	if( q4[ 0 ].checked ) 
 	{ 
-	score = score + 1; 
+	score = score + 12.5; 
 
 	} 
 	
 	if( q5[ 2 ].checked ) 
 	{ 
-	score = score + 1; 
+	score = score + 12.5; 
 
 	} 
 	
 	if( q6[ 2 ].checked ) 
 	{ 
-	score = score + 1; 
+	score = score + 12.5; 
 
 	} 
 	
 	if( q7[ 2 ].checked ) 
-		{ 
-		score = score + 1; 
-		} 
+	{ 
+	score = score + 12.5; 
+		
+	} 
 	if( q8[ 1 ].checked )
-		{
-			score = score + 1; 
+	{
+	score = score + 12.5; 
 
-		}		
-   
-    
-	alert( "You got " + score + " correct!" );
+	}		
+	alert( "You scored a " + score + "." );
+	parent.reportScores( score );
 }
 	
