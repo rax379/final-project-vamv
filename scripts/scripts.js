@@ -5,7 +5,7 @@ var oScorm = pipwerks.SCORM;
 
 // This function starts the course.  This function should be called first to ensure that
 // all session variables are created
-function loadOLM();
+function loadOLM()
 {
 	
 }
@@ -98,13 +98,35 @@ function reportScores(score)
 	oScorm.set("cmi.score.max", 100 );
 	oScorm.set("cmi.score.scaled", score / 100 );
 	
-	oScorm.set("cmi.success_status", "passed" );
-	if 
-	oScorm.set("cmi.completion_status", "completed" );
-	oScorm.set("cmi.lesson_status", "passed"  );
+	if( score >= 70 )
+	{ 
+		oScorm.set("cmi.success_status", "passed" ); 
+		oScorm.set("cmi.completion_status", "completed" );
+		oScorm.set("cmi.lesson_status", "passed"  );
+	}
+	else
+	{
+		oScorm.set("cmi.success_status", "failed" ); 
+		oScorm.set("cmi.completion_status", "incomplete" );
+		oScorm.set("cmi.lesson_status", "failed"  );
+	
+	}
 	
 	oScorm.save();
 }
+
+
+function visitCertificate()
+{
+	var learner_name = oScorm.get( "cmi.learner_name" );
+	document.getElementById( "content-frame" ).
+contentWindow.document.getElementById( "user-name" ).innerHTML = learner_name;
+}
+function visitQuiz()
+{
+	sessionStorage.setItem( "quiz", "visited" );
+}
+
 function gradeQuiz1()
 {
 var score = 0;
@@ -121,7 +143,7 @@ function finishCourse()
 	oScorm.save();
 	oScorm.quit();
 }
-function finishOLM();
+function finishOLM()
 {
 	
 }
@@ -225,6 +247,11 @@ function visitTopic3f()
 	sessionStorage.setItem( "topic-3f", "visited" );
 	checkVisits();
 }
+function visitTopicdrag-and-drop()
+{
+	sessionStorage.setItem( "drag-and-drop", "visited");
+	checkVisits();
+}
 function checkVisits()
 {
 	var value1 = sessionStorage.getItem( "topic-1" );
@@ -247,6 +274,9 @@ function checkVisits()
 	var value18 = sessionStorage.getItem( "topic-3d" );
 	var value19 = sessionStorage.getItem( "topic-3e" );
 	var value20 = sessionStorage.getItem( "topic-3f" );
+	var value21 = sessionStorage.getItem( "drag-and-drop");
+	var value22 = sessionStorage.getItem( "quiz");
+	var value23 = sessionStorage.getItem( "certificate");
 	
 	if( value1 == "visited" && 
 		value2 == "visited" &&
@@ -267,7 +297,10 @@ function checkVisits()
 		value17 == "visited" && 
 		value18 == "visited" &&
 		value19 == "visited" &&
-		value20 == "visited" )
+		value20 == "visited" &&
+		value21 == "visited" &&
+		value22 == "visited" &&
+		value23 == "visited" )
 		{
 			document.getElementById( "content-frame" ).contentWindow.document.getElementById( "quiz-link" ).style.display="inline";
 		}

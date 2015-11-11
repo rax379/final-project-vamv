@@ -3,12 +3,13 @@
 	<head>
 		<meta charset="utf-8"/>
 		<title></title>
+		<script src="scripts/scorm-api-wrapper.js"></script>
+		<script src="scripts/sessionstorage.1.4.js"></script>
 		<link href="styles/drag-and-drop-styles.css" rel="stylesheet" type="text/css"/>
 		<link href="styles/styles.css" rel="stylesheet" type="text/css"/>
 		<script lang="javascript" src="scripts/drag-and-drop.js"></script>
 	</head>
-	  
-    <body>
+	<body onload="javascript:parent.checkVisits();">
         	<header>
 			<div id="banner">
 			<img title="Banner" alt="banner" src="images/introbanner.png"></img>
