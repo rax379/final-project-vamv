@@ -21,7 +21,7 @@ function startCourse()
 		// if it is enabled, checked to see if this course was started
 		// if it was not able to retrieve, the key "course_started", then
 		// then this is the first time we are running the course
-        if( !sessionStorage.getItem( "course_started" ) )
+        if( sessionStorage.getItem( "course_started" ) )
         {
         	// clear the session storage
             sessionStorage.clear();
@@ -48,6 +48,7 @@ function startCourse()
     		sessionStorage.setItem( "topic-3d", "unvisited" );
     		sessionStorage.setItem( "topic-3e", "unvisited" );
     		sessionStorage.setItem( "topic-3f", "unvisited" );
+    		sessionStorage.setItem( "drag-and-drop", "unvisited" );
     		
 			// set the values you want to persist throughout the website here
         }
@@ -275,8 +276,7 @@ function checkVisits()
 	var value19 = sessionStorage.getItem( "topic-3e" );
 	var value20 = sessionStorage.getItem( "topic-3f" );
 	var value21 = sessionStorage.getItem( "drag-and-drop");
-	var value22 = sessionStorage.getItem( "quiz");
-	var value23 = sessionStorage.getItem( "certificate");
+	
 	
 	if( value1 == "visited" && 
 		value2 == "visited" &&
@@ -298,9 +298,7 @@ function checkVisits()
 		value18 == "visited" &&
 		value19 == "visited" &&
 		value20 == "visited" &&
-		value21 == "visited" &&
-		value22 == "visited" &&
-		value23 == "visited" )
+		value21 == "visited" )
 		{
 			document.getElementById( "content-frame" ).contentWindow.document.getElementById( "quiz-link" ).style.display="inline";
 		}
