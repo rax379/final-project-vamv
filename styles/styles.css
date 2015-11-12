@@ -144,6 +144,10 @@ header
 {
 	display: none;
 }
+#cert-link
+{
+	display: none;
+}
 audio
 {
 	width: 130px;

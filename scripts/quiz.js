@@ -54,7 +54,8 @@ function processQuiz()
 	score = score + 12.5; 
 
 	}		
-	alert( "You scored a " + score + "." );
+	alert( "You scored a " + score + "%." );
 	parent.reportScores( score );
+	javascript:parent.visitQuiz();
 }
 	

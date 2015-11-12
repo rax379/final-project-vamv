@@ -2,14 +2,14 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8"/>
-		<title></title>
-		<script src="scripts/scorm-api-wrapper.js"></script>
-		<script src="scripts/sessionstorage.1.4.js"></script>
+		<title>Healthy Lifestyles for Teen</title>
 		<link href="styles/drag-and-drop-styles.css" rel="stylesheet" type="text/css"/>
 		<link href="styles/styles.css" rel="stylesheet" type="text/css"/>
-		<script lang="javascript" src="scripts/drag-and-drop.js"></script>
+		<script src="scripts/scorm-api-wrapper.js"></script>
+		<script src="scripts/sessionstorage.1.4.js"></script>
+		<script src="scripts/drag-and-drop.js"></script>
 	</head>
-	<body onload="javascript:parent.checkVisits();">
+	<body>
         	<header>
 			<div id="banner">
 			<img title="Banner" alt="banner" src="images/introbanner.png"></img>
@@ -19,12 +19,12 @@
 		<div id="main">
 		<div id="navigation">
 			<nav>
-				<a href="index.html" class="menu-links">Home</a><br>
+				<a href="introduction.html" class="menu-links">Home</a><br>
 				<a href="topic-1.html"  class="menu-links">Nutrition</a><br>
 				<a href="topic-2.html"  class="menu-links">Fitness</a><br>
 				<a href="topic-3.html"  class="menu-links">Physical Appearance</a><br>
 				<a href="drag-and-drop.html" class="menu-links">Activity</a><br>
-				<a href="quiz.html" class="menu-links">Quiz</a>
+				<a href="quiz.html" id="quiz-link" class="menu-links">Quiz</a>
 			</nav>	
 			</div>
 			<div id="main-info">
@@ -45,8 +45,6 @@
 				     		ondragstart="return startDrag( event )"
 				     		ondragend="return endDrag( event )"><p>personal hygiene</p></div><br/>  
 				</div>
-				
-				    
 				<div class="column">
 						<h3>Best Decisions</h3>
 				     	<div id="db1" value="1" class="draggerbay" 

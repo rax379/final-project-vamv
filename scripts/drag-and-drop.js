@@ -28,10 +28,10 @@ function processForm()
 			break;
 		}
 	}
-	
 	if( bCorrect )
 	{
 		document.getElementById( "response" ).innerHTML = "Correct!";
+		javascript:parent.visitTopicdraganddrop();
 	}
 	else
 	{
