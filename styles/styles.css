@@ -9,11 +9,16 @@ body
 
 header
 {
+	margin-top: 0px;
 	font-size:  16px;
 	font-weight: bold;
 	text-align: left;
+	padding: 0px;
 }
-
+h1
+{
+	margin-top: 0;
+}
 .menu-links
 {
 	text-decoration: none;
@@ -26,7 +31,7 @@ header
 	display: table-cell;
 	vertical-align: top;
 	border: solid blue;
-	float: left;
+	float: right;
 	width: 525px;
 	height: 410px;
 	padding: 10px;
@@ -89,11 +94,10 @@ header
     display: table-cell;
     font-weight: bold;
     border: solid blue;
-    background-color: yellow;
     width: 100px;
     text-align: center;
     padding: 10px;
-    height: 200px;
+    height: 410px;
     float:left;
     vertical-align: top;
 }
