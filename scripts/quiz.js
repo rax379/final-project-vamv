@@ -58,4 +58,3 @@ function processQuiz()
 	parent.reportScores( score );
 	javascript:parent.visitQuiz();
 }
-	
