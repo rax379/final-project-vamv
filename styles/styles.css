@@ -4,7 +4,7 @@ body
 	padding: 0px;
 	font-size: 12px;
 	font-family: Arial;
-	background: #d0f2cc;
+	background: #c3c3d5;
 }
 
 header
@@ -24,7 +24,6 @@ h1
 	text-decoration: none;
 	color: green;
 	display: block;
-	
 }
 #main-info
 {
