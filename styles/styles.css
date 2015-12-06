@@ -28,7 +28,7 @@ h1
 {
 	display: table-cell;
 	vertical-align: top;
-	border: solid blue;
+	border: solid teal;
 	float: right;
 	width: 525px;
 	height: 410px;
@@ -39,7 +39,7 @@ h1
 #aside-info
 {
 	height: 420px;
-	border: solid blue;
+	border: solid teal;
 	vertical-align: top;
 	padding: 5px;
 	width: 173px;
@@ -58,7 +58,7 @@ h1
 
 #main-table
 {
-	border: solid blue;
+	border: solid teal;
 	vertical-align: top;
 	display: table;
 }
@@ -73,13 +73,13 @@ h1
 	vertical-align: top;
 	margin-left: 135px;
 	margin-bottom: 15px;
-	border: solid blue;
+	border: solid teal;
 }
 #sub-navigation a
 {
 	font-size: 14px;
 	font-weight: bold;
-	color: green;
+	color: black;
 	width: 120px;
 	text-align: left;
 	padding: 4px;
@@ -91,7 +91,7 @@ h1
     margin-right: 3px;
     display: table-cell;
     font-weight: bold;
-    border: solid blue;
+    border: solid teal;
     width: 100px;
     text-align: center;
     padding: 10px;
@@ -102,7 +102,7 @@ h1
 
 #sub-navigation a:hover
 {
-	background: #ff8080;
+	background: #80ffff;
 	font-style: none;
 	color: black;
 }
@@ -121,7 +121,7 @@ h1
 	font-weight: bold;
 	color: white;
 	padding: 5px;
-	border: solid blue;
+	border: solid teal;
 }
 
 #content-frame
