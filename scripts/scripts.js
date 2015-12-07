@@ -49,7 +49,6 @@ function startCourse()
     		sessionStorage.setItem( "topic3e", "unvisited" );
     		sessionStorage.setItem( "topic3f", "unvisited" );
     		sessionStorage.setItem( "draganddrop", "unvisited" );
-    		sessionStorage.setItem( "quiz", "unvisited" );
     		sessionStorage.setItem( "cert", "unvisited" );
     		
 			// set the values you want to persist throughout the website here
